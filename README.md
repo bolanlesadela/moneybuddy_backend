@@ -1,9 +1,9 @@
 # MoneyBuddy Backend
 
-A sales tracking API for small online vendors — built with FastAPI and Supabase.
+A sales tracking API for small online vendors built with FastAPI and Supabase.
 
 ## The Problem
-Small vendors selling on Instagram, Telegram, and Snapchat have no visibility 
+Small vendors selling on Instagram, Telegram, Snapchat, TikTok, etc., have no visibility 
 into which platforms are driving their revenue. This API powers a tool that 
 fixes that.
 

@@ -1,6 +1,7 @@
 # MoneyBuddy Backend
 
 A sales tracking API for small online vendors built with FastAPI and Supabase.
+Log sales by platform and get a breakdown of where your orders are coming from.
 
 ## The Problem
 Small vendors selling on Instagram, Telegram, Snapchat, TikTok, etc., have no visibility 
@@ -10,20 +11,15 @@ fixes that.
 ## Stack
 - FastAPI
 - Supabase (PostgreSQL)
-- Python 3
-- Deployed on Render
+- Python
 
 ## Endpoints
-- `POST /sales` — log a new sale with platform, amount, and product category
-- `GET /analytics` — returns total revenue, total orders, and breakdown by platform
-- `GET /health` — health check
+- `GET /health` — check server status
+- `POST /sales` — log a sale (platform, amount, product_category)
+- `GET /analytics` — get total sales and breakdown by platform
 
 ## Running Locally
 ```bash
-git clone https://github.com/bolanlesadela/moneybuddy_backend
-cd moneybuddy_backend
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
+pip install fastapi uvicorn supabase python-dotenv
 uvicorn main:app --reload
 ```
